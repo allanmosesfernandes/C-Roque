@@ -1,0 +1,26 @@
+{
+  "name": "c-roque",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allanmosesfernandes/C-Roque.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allanmosesfernandes/C-Roque/issues"
+  },
+  "homepage": "https://github.com/allanmosesfernandes/C-Roque#readme"
+}
