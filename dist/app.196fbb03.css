@@ -8,6 +8,7 @@ html, body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  color: #000;
 }
 
 dl, ol, ul {
@@ -326,6 +327,64 @@ select {
   width: 100px;
 }
 
+/****** Welcome Section ********/
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 0px;
+  flex-direction: column;
+}
+.welcome .welcome-content {
+  width: 70%;
+}
+.welcome .top-text {
+  color: #c65624;
+  font-family: "Centra No2";
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+.welcome .top-headline {
+  font-family: "Ivy-mode regular", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  color: #121110;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.welcome .welcome-subtitle {
+  margin-top: 8px;
+  color: #000;
+  margin-bottom: 120px;
+}
+
+.floating-images {
+  position: relative;
+  z-index: 2;
+}
+
+.woman-floating {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+.resort {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  right: -20%;
+}
+
 /* Media Queries for Mobile */
 @media only screen and (max-width: 768px) {
   nav {
@@ -354,6 +413,46 @@ select {
     margin: 10px 0;
   }
 }
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-top: -5%;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  color: #fff !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  color: #fff !important;
+}
+
 @font-face {
   font-family: "Centra No2";
   src: url("http://db.onlinewebfonts.com/t/229a57bbeef591e04a1fdfe347c90864.eot");

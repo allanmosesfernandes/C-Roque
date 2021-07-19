@@ -1,9 +1,34 @@
+/* Swiper Init */
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
+// import Swiper styles
+import 'swiper/swiper-bundle.css';
+import { Autoplay } from 'swiper';
+Swiper.use([Autoplay]);
+
+
+// init Swiper:
+
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 let timeText = document.querySelector('#local-time-india');
 let weatherIcon = document.querySelector('#weather-icon');
 let temperature = document.querySelector('#local-temp-colva');
 let temperatureDesc = document.querySelector('#temp-desc');
 let hamburger = document.querySelector('.hamburger');
 let mobileMenu = document.querySelector('.menu-mobile');
+
 /* Display Local Time */
 ticker()
 function ticker () {
