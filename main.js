@@ -3,6 +3,7 @@
 import Swiper from 'swiper/bundle';
 // import Swiper styles
 import 'swiper/swiper-bundle.css';
+import './assets/css/main.scss';
 import { Autoplay } from 'swiper';
 Swiper.use([Autoplay]);
 

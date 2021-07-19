@@ -12341,7 +12341,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/swiper/swiper.esm.js":[function(require,module,exports) {
+},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/css/main.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\images\\hero-homepage.jpg":[["hero-homepage.7d5c8e8c.jpg","assets/images/hero-homepage.jpg"],"assets/images/hero-homepage.jpg"],"./..\\fonts\\IvyMode-Regular.ttf":[["IvyMode-Regular.6896185d.ttf","assets/fonts/IvyMode-Regular.ttf"],"assets/fonts/IvyMode-Regular.ttf"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/swiper/swiper.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12522,6 +12527,8 @@ var _bundle = _interopRequireDefault(require("swiper/bundle"));
 
 require("swiper/swiper-bundle.css");
 
+require("./assets/css/main.scss");
+
 var _swiper = require("swiper");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -12593,7 +12600,7 @@ hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('close');
   mobileMenu.classList.toggle('open');
 });
-},{"swiper/bundle":"node_modules/swiper/swiper-bundle.esm.js","swiper/swiper-bundle.css":"node_modules/swiper/swiper-bundle.css","swiper":"node_modules/swiper/swiper.esm.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"swiper/bundle":"node_modules/swiper/swiper-bundle.esm.js","swiper/swiper-bundle.css":"node_modules/swiper/swiper-bundle.css","./assets/css/main.scss":"assets/css/main.scss","swiper":"node_modules/swiper/swiper.esm.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12621,7 +12628,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62222" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58091" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
