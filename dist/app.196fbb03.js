@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\hero-homepage.jpg":[["hero-homepage.7d5c8e8c.jpg","assets/images/hero-homepage.jpg"],"assets/images/hero-homepage.jpg"],"./..\\fonts\\IvyMode-Regular.ttf":[["IvyMode-Regular.6896185d.ttf","assets/fonts/IvyMode-Regular.ttf"],"assets/fonts/IvyMode-Regular.ttf"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\images\\First Fold.JPG":[["First Fold.5a820827.JPG","assets/images/First Fold.JPG"],"assets/images/First Fold.JPG"],"./..\\images\\A foodies Happy Place.jpg":[["A foodies Happy Place.8e341166.jpg","assets/images/A foodies Happy Place.jpg"],"assets/images/A foodies Happy Place.jpg"],"./..\\images\\trees.jpg":[["trees.68801a63.jpg","assets/images/trees.jpg"],"assets/images/trees.jpg"],"./..\\images\\dining\\leaf.svg":[["leaf.1b508ced.svg","assets/images/dining/leaf.svg"],"assets/images/dining/leaf.svg"],"./..\\images\\dining\\Dining at ADM 01.jpg":[["Dining at ADM 01.3a5bb8d0.jpg","assets/images/dining/Dining at ADM 01.jpg"],"assets/images/dining/Dining at ADM 01.jpg"],"./..\\images\\dining\\leaf -green.svg":[["leaf -green.b183e0cf.svg","assets/images/dining/leaf -green.svg"],"assets/images/dining/leaf -green.svg"],"./..\\fonts\\IvyMode-Regular.ttf":[["IvyMode-Regular.6896185d.ttf","assets/fonts/IvyMode-Regular.ttf"],"assets/fonts/IvyMode-Regular.ttf"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58091" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56087" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

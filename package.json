@@ -9,13 +9,13 @@
     "swiper": "^6.7.5"
   },
   "devDependencies": {
-    "cssnano": "^5.0.6",
+    "cssnano": "^4.1.11",
     "netlify-cli": "^4.4.2",
     "postcss": "^8.3.5"
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./",
+    "build": "parcel build --no-minify index.html --public-url ./",
     "dev": "parcel index.html"
   },
   "repository": {

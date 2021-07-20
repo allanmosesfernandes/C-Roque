@@ -13,12 +13,14 @@
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-    font-family: 'Ivy-mode regular';
+    font-family: 'Ivy-mode regular' !important;
     color: #fff;
   }
 
   .h1-hero {
       font-size: 100px;
+      font-family: 'Ivy-mode regular' !important;
+
   }
   p {
     font-family: "Centra No2";
@@ -31,11 +33,157 @@
           text-align: center;
       }
   }
+  
+  .top-text {
+    color: #c65624 !important;
+    font-family: "Centra No2";
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.top-headline {
+    font-family: 'Ivy-mode regular', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    color: #121110;
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.room-slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.room-block {
+    width: 100%;
+
+    .top-text {
+        margin: 20px 0 0 0;
+    }
+
+    .room-title {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin: 10px 0 0 0;
+
+        .top-headline {
+            font-size: 24px;
+        }
+    }
+}
+
+.room-block p {
+    color: #000;
+}
+.room-price {
+    color: $orange;
+    font-family: "Centra No2";
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.room-amenities {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 0 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    color: #121110;
+    padding-top: 14px;
+
+    p {
+        display: flex;
+        align-items: baseline;
+    }
+    span {
+        margin-right: 10px;
+    }
+}
+
+.body-soul {
+    .top-headline {
+        color: #fff;
+    }
+}
+.dining {
+    p.subtitle {
+        color: #000;
+        width: 80%;
+    }
+}
+
+.unforgettable {
+    p.subtitle {
+        color: #000;
+        width: 50%;
+    }
+}
+.unforgettable-text  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
   /* Media Queries for Mobile */
 
+.relax-block {
+    p.subtitle {
+        width: 100%;
+    }
+
+    p.top-headline {
+        font-size: 20px;
+    }
+    p.subtitle {
+        font-size: 14px;
+    }
+}
+.author-wrapper {
+    display: flex;
+    align-items: center;
+    p {
+        margin-bottom: 0;
+        color: #ffffff;
+    }
+}
 @media only screen and (max-width: 768px) {
    
     .h1-hero {
         font-size: 50px;
+        color: #ffffff !important;
     }
+    
+.room-block {
+
+    .room-title {
+
+        .top-headline {
+            font-size: 16px;
+        }
+    }
+}
+.unforgettable {
+    p.subtitle {
+        color: #000;
+        width: 70%;
+    }
+}
+}
+
+@media only screen and (max-width: 425px) {
+
+    .unforgettable {
+        p.subtitle {
+            color: #000;
+            width: 100%;
+        }
+    }
+
 }

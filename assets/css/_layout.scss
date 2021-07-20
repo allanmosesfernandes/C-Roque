@@ -1,5 +1,5 @@
 $orange: #c65624;
-
+$green: #2d4d3a;
 
 nav {
     display: flex;
@@ -31,7 +31,7 @@ header {
 
 .cover-image {
     position: absolute;
-    background-image: url('../images/hero-homepage.jpg');
+    background-image: url('../images/First\ Fold.JPG');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,6 +80,7 @@ header {
 input[type="text"] {
     background: transparent;
     border: none;
+    color: $orange;
 }
 
 ::-webkit-input-placeholder {
@@ -133,8 +134,19 @@ select {
 }
 
 /****** Welcome Section ********/
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section.beige {
+    background-color: #edece8;
+}
 
-.welcome {
+section.hero {
+    padding-top: 0;
+}
+
+section.welcome {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,25 +159,6 @@ select {
         width: 70%;
     }
 
-    .top-text {
-        color: $orange;
-        font-family: "Centra No2";
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 1px;
-        font-size: 13px;
-    }
-
-    .top-headline {
-        font-family: 'Ivy-mode regular', sans-serif;
-        margin-top: 5px;
-        margin-bottom: 16px;
-        color: #121110;
-        font-size: 30px;
-        line-height: 44px;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
 
     .welcome-subtitle {
         margin-top: 8px;
@@ -185,6 +178,7 @@ select {
     position: absolute;
     bottom: 0;
 }
+
 .resort {
     width: 150px;
     height: 150px;
@@ -194,10 +188,227 @@ select {
     right: -20%;
 }
 
-/* Media Queries for Mobile */
 
+/*--- Booking & reservation */
+.room-overview {
+    display: flex;
+    padding-bottom: 100px;
+    flex-direction: column;
+    background-color: #edece8;
+}
+
+.room-suites {
+    margin: 0 50px;
+}
+
+.room-block {
+    margin-bottom: 50px;
+
+    .room-image {
+        width: 100%;
+    }
+}
+
+.room-img {
+    position: relative;
+
+    &:hover {
+        .img__description {
+            opacity: 1;
+        }
+    }
+}
+
+/* Media Queries for Mobile */
+.img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    opacity: 0;
+    background-color: rgba(198, 86, 36, 0.6);
+    /* transition effect. not necessary */
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.body-soul {
+    background-image: url('../images/A\ foodies\ Happy\ Place.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    // background-attachment: fixed;
+}
+
+
+
+.body-soul.second{
+    background-image: url('../images/trees.jpg');
+}
+.dining {
+    background-image: url('../images/dining/leaf.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 250px;
+}
+.dining-text {
+    width: 70%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.dining-img {
+    background-image: url("../images/dining/Dining\ at\ ADM\ 01.jpg");
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* margin-bottom: 100px; */
+    background-position: center center;
+    width: 80%;
+
+}
+.dining-img img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    position: absolute;
+    bottom: -20%;
+    left: 5%;
+}
+
+
+.dining .book-now-btn {
+    border: 1px solid $orange;
+    color: $orange;
+    width: max-content;
+}
+
+.unforgettable-text {
+    .book-now-btn {
+        border: 1px solid $orange;
+        color: $orange;
+    }
+}
+.relax-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    width: 80%;
+    margin: 30px 0;
+    
+    img {
+        height: 400px;
+        object-fit: cover;
+        filter: brightness(0.9);
+        object-position: bottom;
+        width: 100%;
+        transition: all 0.3s ease-in;
+        backface-visibility: hidden;
+        overflow: hidden;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    width: 40%;
+    padding: 40px 0;
+}
+
+.quote {
+    background-image: url('../images/dining/leaf\ -green.svg');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: $green;
+
+    .top-headline {
+        color: #fff;
+    }
+}
+.orange-line {
+    width: 45px;
+    height: 1.5px;
+    margin-right: 16px;
+    background-color: #c65624;
+}
+
+.relax-img-container {
+    overflow: hidden;
+}
+//////////* Footer *///////
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0;
+    width: 80%;
+    margin: auto;
+    color: #000;
+    padding: 100px 0;
+
+    h4, p {
+        color: #000;
+    }
+}
+.footer-group {
+    gap: 30px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: baseline;
+
+    .social-links-menu {
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.footer-info-column.center {
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-links {
+    color: $orange;
+    font-size: 20px;
+    font-family: "Centra No2";
+    display: flex;
+    flex-direction: column;
+}
+.footer-link {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+a.social-icon-menu.w-inline-block:first-child {
+    margin-left: 0;
+}
 @media only screen and (max-width: 768px) {
     nav {
+        position: fixed;
+        width: 100%;
+        z-index: 99;
         background-color: #2d4d3a;
     }
 
@@ -218,49 +429,105 @@ select {
 
     .booking-block {
         font-size: 12px;
-
     }
 
     .form-controller {
         margin: 10px 0;
     }
+
+    .room-suites {
+        margin: 0 30px;
+    }
+
+    /*Hero Section */
+    .hero {
+        height: 100vh;
+    }
+
+    .resort {
+        right: 0;
+    }
+
+    .body-soul {
+        height: 450px;
+    }
+
+    .dining-text {
+        width: 100%;
+    }
+    .dining .book-now-btn {
+        border: 1px solid $orange;
+        color: $orange;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+    .dining-img {
+        margin: auto;
+    }
+
+    .dining {
+        // background-position: top left;
+        background-size: 150px;
+    }
+
+    section.welcome {
+        padding: 50px 30px 0;
+        .welcome-content {
+            width: 100%;
+        }
+        .welcome-subtitle {
+            margin-bottom: 50px;
+        }
+    }
+    
 }
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-    margin-top: -5%;
-  }
+@media only screen and (max-width: 425px) {
 
-  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-      color: #fff !important;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+    .quote {
+        background-size: 150px;
+    }
+    .quote-wrapper {
+        width: 80%;
+    }
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+    .dining-text {
+        width: 90%;
+    }
+    
+    .dining {
+        background-position: top left;
+    }
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    color: #fff !important;
+    .relax-grid {
+        display: flex;
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    .relax-block {
+        white-space: normal;
+        width: 90%;
+        display: inline-block;
+        margin-right: 20px;
+
+    }
+
+    section.unforgettable {
+        padding: 50px 30px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 0;
+    }
+    
+    .footer-group {
+        flex-direction: column;
+    }
+
+    .footer-info-column.main {
+        grid-column: span 2;
+    }
 }

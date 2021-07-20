@@ -1,9 +1,9 @@
-/* Swiper Init */
+/* Swiper Initialization */
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 // import Swiper styles
 import 'swiper/swiper-bundle.css';
-import './assets/css/main.scss';
+import './assets/css/app.scss';
 import { Autoplay } from 'swiper';
 Swiper.use([Autoplay]);
 
@@ -12,6 +12,8 @@ Swiper.use([Autoplay]);
 
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
+    effect: 'fade',
+    speed: 1500,
     loop: true,
     autoplay: {
         delay: 2500,
@@ -22,7 +24,31 @@ const swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
-
+const swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+          breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
+        }
+  });   
 let timeText = document.querySelector('#local-time-india');
 let weatherIcon = document.querySelector('#weather-icon');
 let temperature = document.querySelector('#local-temp-colva');
@@ -35,7 +61,6 @@ ticker()
 function ticker () {
     var today = new Date();
     var time = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
-    console.log(time);
     timeText.innerHTML = time;
 }
 
