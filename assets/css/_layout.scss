@@ -1,3 +1,4 @@
+  
 $orange: #c65624;
 $green: #2d4d3a;
 
@@ -533,6 +534,17 @@ a.social-icon-menu.w-inline-block:first-child {
 .room-features {
     p {
         color: #000;
+    }
+}
+
+.info-image-container {
+    display: flex;
+}
+
+.info-block-guests {
+    h2 {
+        color: #000;
+        margin: 10px 0;
     }
 }
 @media only screen and (max-width: 425px) {

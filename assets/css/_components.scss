@@ -25,6 +25,17 @@ ul li {
     }
 }
 
+.book-now-light {
+    @extend .book-now-btn;
+    color: $orange;
+    border: 1px solid $orange;
+}
+ 
+.booking-buttons {
+    .book-now-orange {
+        margin-right: 10px;
+    }
+}
 .book-now-orange {
     @extend .book-now-btn;
     border-color: $orange;
