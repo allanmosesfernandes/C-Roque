@@ -71,12 +71,10 @@ const apiKey = "506d538c650a02ad914e9043bbe90fc6";
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=15.269330&lon=73.915963&units=metric&appid=${apiKey}`;
 // const url = `api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid={apiKey}`
 
-console.log(url)
 //api.openweathermap.org/data/2.5/find?lat={15}&lon={73}&cnt={cnt}&appid={apiKey}
 fetch(url)
 .then(response => response.json())
 .then(data => {
-    console.log(data)
     const { main, name, sys, weather } = data;
     const temp = main.feels_like;
     const weatherDesc = weather[0].description;
