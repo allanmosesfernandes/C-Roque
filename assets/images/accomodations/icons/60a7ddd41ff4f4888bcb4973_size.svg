@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.646" height="16.645" viewBox="0 0 16.646 16.645">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_176" data-name="Rectangle 176" width="16.337" height="16.337" fill="none" stroke="#2b303a" stroke-width="1.2"/>
+    </clipPath>
+  </defs>
+  <g id="Group_339" data-name="Group 339" transform="translate(0.154 0.154)" opacity="0.8">
+    <line id="Line_21" data-name="Line 21" x1="10.308" transform="translate(3.013 1.728)" fill="none" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    <g id="Group_336" data-name="Group 336">
+      <g id="Group_335" data-name="Group 335" clip-path="url(#clip-path)">
+        <line id="Line_22" data-name="Line 22" x1="10.308" transform="translate(3.013 14.611)" fill="none" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <line id="Line_23" data-name="Line 23" y1="10.317" transform="translate(1.73 3.011)" fill="none" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      </g>
+    </g>
+    <line id="Line_24" data-name="Line 24" y1="10.317" transform="translate(14.604 3.011)" fill="none" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    <g id="Group_338" data-name="Group 338" transform="translate(0.445 0.446)">
+      <g id="Group_340" data-name="Group 340">
+        <rect id="Rectangle_177" data-name="Rectangle 177" width="2.567" height="2.567" transform="translate(12.879)" fill="none" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <rect id="Rectangle_178" data-name="Rectangle 178" width="2.567" height="2.567" fill="none" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <rect id="Rectangle_179" data-name="Rectangle 179" width="2.567" height="2.568" transform="translate(12.879 12.878)" fill="none" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+        <rect id="Rectangle_180" data-name="Rectangle 180" width="2.567" height="2.568" transform="translate(0 12.878)" fill="none" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      </g>
+    </g>
+  </g>
+</svg>

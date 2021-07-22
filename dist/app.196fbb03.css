@@ -34,7 +34,7 @@ ul li {
   display: inline;
 }
 
-.book-now-btn, .book-now-orange {
+.book-now-btn, .book-now-orange, .book-now-light {
   padding: 16px 30px 14px;
   border-style: solid;
   border-width: 1.5px;
@@ -47,9 +47,18 @@ ul li {
   transition: all 0.5s ease-in;
   font-family: "Centra No2";
 }
-.book-now-btn:hover, .book-now-orange:hover {
+.book-now-btn:hover, .book-now-orange:hover, .book-now-light:hover {
   background: #fff;
   color: #000;
+}
+
+.book-now-light {
+  color: #c65624;
+  border: 1px solid #c65624;
+}
+
+.booking-buttons .book-now-orange {
+  margin-right: 10px;
 }
 
 .book-now-orange {
@@ -161,10 +170,10 @@ ul li {
     padding: 16px 30px 14px !important;
   }
 
-  .book-now-btn, .book-now-orange {
+  .book-now-btn, .book-now-light, .book-now-orange {
     padding: 5px;
   }
-  .book-now-btn a, .book-now-orange a {
+  .book-now-btn a, .book-now-light a, .book-now-orange a {
     font-size: 12px;
   }
 
@@ -481,13 +490,13 @@ section.welcome .welcome-subtitle {
   left: 5%;
 }
 
-.dining .book-now-btn, .dining .book-now-orange {
+.dining .book-now-btn, .dining .book-now-light, .dining .book-now-orange {
   border: 1px solid #c65624;
   color: #c65624;
   width: max-content;
 }
 
-.unforgettable-text .book-now-btn, .unforgettable-text .book-now-orange {
+.unforgettable-text .book-now-btn, .unforgettable-text .book-now-light, .unforgettable-text .book-now-orange {
   border: 1px solid #c65624;
   color: #c65624;
 }
@@ -643,7 +652,7 @@ a.social-icon-menu.w-inline-block:first-child {
     width: 100%;
   }
 
-  .dining .book-now-btn, .dining .book-now-orange {
+  .dining .book-now-btn, .dining .book-now-light, .dining .book-now-orange {
     border: 1px solid #c65624;
     color: #c65624;
     width: 200px;
@@ -668,6 +677,66 @@ a.social-icon-menu.w-inline-block:first-child {
     margin-bottom: 50px;
   }
 }
+.room-highlight, .room-highlight-reverse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.room-highlight .room-background, .room-highlight-reverse .room-background {
+  background-image: url("/slider-02.32b4ead9.jpg");
+  background-position: center;
+  z-index: 0;
+  width: 100%;
+  height: 580px;
+  max-width: 750px;
+}
+.room-highlight .stay-details, .room-highlight-reverse .stay-details {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 26px;
+  padding: 32px;
+  background: #fff;
+  color: #000;
+  flex-direction: column;
+  margin-left: -5%;
+  z-index: 2;
+}
+
+.room-highlight-reverse {
+  flex-direction: row-reverse;
+}
+.room-highlight-reverse .stay-details {
+  margin-right: -5%;
+  margin-left: 0;
+}
+
+.key-highlight {
+  display: flex;
+  align-items: baseline;
+}
+.key-highlight img {
+  margin-right: 10px;
+}
+
+.room-tabs {
+  display: none;
+}
+
+.room-features p {
+  color: #000;
+}
+
+.info-image-container {
+  display: flex;
+}
+
+.info-block-guests h2 {
+  color: #000;
+  margin: 10px 0;
+}
+
 @media only screen and (max-width: 425px) {
   .quote {
     background-size: 150px;
@@ -761,6 +830,134 @@ a.social-icon-menu.w-inline-block:first-child {
 }
 .room-grid .swiper-button-prev:after, .room-grid .swiper-button-next:after {
   font-size: 18px;
+}
+
+.warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0px 2px;
+  background: #ffffff;
+  display: inline-block;
+  color: #c65624;
+  border-radius: 3px 3px 0px 0px;
+  text-transform: uppercase;
+}
+
+.panels {
+  background: #ffffff;
+  min-height: 200px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.panel {
+  display: none;
+  animation: fadein 0.8s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.panel-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.radio {
+  display: none;
+}
+
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel {
+  display: block;
+}
+
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab {
+  background: #ffffff;
+  color: #c65624 !important;
+  border-top: 3px solid #c65624;
+  font-weight: bold;
+}
+
+.panel-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.panel-container p {
+  font-size: 16px !important;
+}
+
+.accordion {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  display: flex;
+  align-items: end;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+  font-family: "Centra No2";
+  letter-spacing: 1px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #edece8;
+}
+
+.accordion:before {
+  content: url("/down-chevron.2f9ea5b2.png");
+  transform: scale(0.5);
+  color: #777;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.active:before {
+  transform: rotate(180deg) scale(0.5);
+}
+
+.accordion-panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+.accordion-panel p {
+  color: #000;
+  padding: 20px 0;
+}
+
+.room-tabs {
+  display: none;
 }
 
 @font-face {

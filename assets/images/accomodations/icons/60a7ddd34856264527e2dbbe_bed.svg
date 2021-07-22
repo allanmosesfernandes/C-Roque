@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.414" height="17.465" viewBox="0 0 18.414 17.465">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(0.6 0.6)" opacity="0.8">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+      <path id="Path_102" data-name="Path 102" d="M17.924,16H.71L2.553,10.55H16.08Z" transform="translate(-0.71 -3.881)" fill="rgba(0,0,0,0)" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_103" data-name="Path 103" d="M.71,18.59v4.148H3.2V20.664H15.728v2.074h2.2V18.59Z" transform="translate(-0.71 -6.473)" fill="rgba(0,0,0,0)" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_104" data-name="Path 104" d="M3.5,7.379V2.513A1.809,1.809,0,0,1,5.309.71h9.82a1.8,1.8,0,0,1,1.8,1.8V7.379" transform="translate(-1.609 -0.71)" fill="rgba(0,0,0,0)" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_105" data-name="Path 105" d="M7.392,6.83H8.2A2.142,2.142,0,0,1,10.34,8.978v.38H5.25v-.38A2.142,2.142,0,0,1,7.392,6.83Z" transform="translate(-2.173 -2.682)" fill="rgba(0,0,0,0)" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="Path_106" data-name="Path 106" d="M16.2,6.83h.806A2.142,2.142,0,0,1,19.15,8.978v.38H14.06v-.38A2.142,2.142,0,0,1,16.2,6.83Z" transform="translate(-5.013 -2.682)" fill="rgba(0,0,0,0)" stroke="#2b303a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>
