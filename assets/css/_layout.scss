@@ -482,6 +482,59 @@ a.social-icon-menu.w-inline-block:first-child {
     
 }
 
+.room-highlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    .room-background {
+        background-image: url('../images/first-slider/slider-02.jpg');
+        background-position: center;
+        z-index: 0;
+        width: 100%;
+        height: 580px;
+        max-width: 750px;
+    }
+    .stay-details {
+        display: flex;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 26px;
+        padding: 32px;
+        background: #fff;
+        color: #000;
+        flex-direction: column;
+        margin-left: -5%;
+        z-index: 2;
+    }
+    
+}
+
+.room-highlight-reverse {
+    @extend .room-highlight;
+    flex-direction: row-reverse;
+    .stay-details{
+        margin-right: -5%;
+        margin-left: 0;
+    }
+}
+
+.key-highlight {
+    display: flex;
+    align-items: baseline;
+    img {
+        margin-right: 10px;
+    }
+}
+
+.room-tabs {
+    display: none;
+}
+.room-features {
+    p {
+        color: #000;
+    }
+}
 @media only screen and (max-width: 425px) {
 
     .quote {

@@ -40,6 +40,11 @@ ul li {
 
 }
 
+.book-now-light {
+    @extend .book-now-btn;
+    color: $orange;
+    border: 1px solid $orange;
+}
 .menu-mobile.open {
     opacity: 1;
     transform: translate3d(0px, 110vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,

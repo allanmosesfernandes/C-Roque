@@ -1,0 +1,132 @@
+.warpper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0px 2px;
+    background: #ffffff;
+    display: inline-block;
+    color: $orange;
+    border-radius: 3px 3px 0px 0px;
+    text-transform: uppercase;
+}
+
+.panels {
+    background: #ffffff;
+    min-height: 200px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.panel {
+    display: none;
+    animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.panel-title {
+    font-size: 1.5em;
+    font-weight: bold
+}
+
+.radio {
+    display: none;
+}
+
+#one:checked~.panels #one-panel,
+#two:checked~.panels #two-panel,
+#three:checked~.panels #three-panel {
+    display: block
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab {
+    background: #ffffff;
+    color: $orange !important;
+    border-top: 3px solid $orange;
+    font-weight: bold;
+}
+
+.panel-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    p {
+        font-size: 16px !important;
+    }
+}
+
+.accordion {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    display: flex;
+    align-items: end;
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: bold;
+    font-family: "Centra No2";
+    letter-spacing: 1px;
+}
+
+.active,
+.accordion:hover {
+    background-color: #edece8;
+}
+
+.accordion:before {
+    content: url('../images/accomodations/down-chevron.png');
+    transform: scale(.5);
+    color: #777;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.active:before {
+    transform: rotate(180deg) scale(.5);
+}
+
+.accordion-panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+
+    p {
+        color: #000;
+        padding: 20px 0;
+
+    }
+}
+
+.room-tabs {
+    display: none;
+}
