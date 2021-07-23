@@ -37,11 +37,58 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    filter: brightness(0.9);
+    filter: brightness(0.6);
     height: 100%;
     z-index: -1;
 }
 
+
+/*----------SUITES -------------*/
+.cover-image.suites-pool {
+    background-image: url('../images/accomodations/room-pool-unsplash.jpg');
+}
+
+.suite {
+    .top-headline {
+        width: 70%;
+        margin: auto;
+    }
+}
+.room-features-list {
+
+    .room-features {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .key-highlight {
+        align-items: end;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+.room-features-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+.swiper-container {
+    margin-top: 0 !important;
+}
+.room-summary {
+    p.subtitle {
+        color: #000;
+    }
+}
+.img-container-rooms {
+    display: flex;
+}
+/*----------SUITES -------------*/
 
 .wrapper-class {
     max-width: 1500px;
@@ -165,6 +212,8 @@ section.welcome {
         margin-top: 8px;
         color: #000;
         margin-bottom: 120px;
+        width: 70%;
+        margin: auto;
     }
 }
 
@@ -548,6 +597,9 @@ a.social-icon-menu.w-inline-block:first-child {
     }
 }
 @media only screen and (max-width: 425px) {
+    .welcome-subtitle {
+        width: 100%;
+    }
 
     .quote {
         background-size: 150px;
