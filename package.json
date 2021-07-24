@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "normalize.css": "^8.0.1",
     "sass": "^1.35.2",
     "swiper": "^6.7.5"
   },
   "devDependencies": {
+    "css-loader": "^6.2.0",
     "cssnano": "^4.1.11",
     "netlify-cli": "^4.4.2",
-    "postcss": "^8.3.5"
+    "postcss": "^8.3.5",
+    "style-loader": "^3.2.1"
   },
   "scripts": {
     "start": "parcel index.html",

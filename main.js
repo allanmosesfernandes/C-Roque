@@ -1,7 +1,5 @@
 /* Swiper Initialization */
 // import Swiper bundle with all modules installed
-import './assets/css/app.scss';
-
 let timeText = document.querySelector('#local-time-india');
 let weatherIcon = document.querySelector('#weather-icon');
 let temperature = document.querySelector('#local-temp-colva');
