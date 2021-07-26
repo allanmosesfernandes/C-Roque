@@ -153,6 +153,7 @@
     .top-headline {
         width: 70%;
         margin: 20px auto;
+        text-transform: none;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -187,5 +188,9 @@
             width: 100%;
         }
     }
-
+    .accomodations {
+        .top-headline {
+            width: 100%;
+        }
+    }
 }
