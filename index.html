@@ -10,11 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="./assets/favicon-16x16.png" type="image/png" sizes="16x16">
+    <meta name="theme-color" content="#106c8e">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
     <div class="cover-image"></div>
-    <header>
+    <header data-aos="fade-down" data-aos-duration="1000">
         <nav class="stroke">
             <div class="menu-button">
                 <span class="hamburger hamburger-5"><span></span></span>
@@ -91,7 +94,7 @@
         </div>
     </header>
     <!--Hero -->
-    <section class="hero">
+    <section class="hero" data-aos="fade-up"  data-aos-duration="1000">
         <h1 class="h1-hero">ESCAPE TO C’ROQUE</h1>
         <p class="hero-subtitle">
             C'Roque is a wellness resort in the green hills of South Goa
@@ -150,7 +153,7 @@
     </section>
 
     <!-- Second Fold-->
-    <section class="welcome">
+    <section class="welcome" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="welcome-content">
             <h4 class="top-text">Welcome to C'Roque </h4>
             <h1 class="top-headline">Welcome to C’Roque Beach Resort </h1>
@@ -169,7 +172,7 @@
         <!-- Slider main container -->
 
     </section>
-    <div class="swiper-container homepage-slider mySwiper">
+    <div class="swiper-container homepage-slider mySwiper"  data-aos-duration="1000" data-aos-delay="300">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="./assets/images/first-slider/Slideshow 01.jpg">
@@ -189,7 +192,7 @@
         <div class="swiper-button-prev"></div>
     </div>
     <!--Third FOld -->
-    <section class="room-overview">
+    <section class="room-overview"  data-aos-duration="1000" data-aos-delay="300">
         <div class="room-suites">
             <p class="top-text">relax Surrounded by nature</p>
             <p class="top-headline">
@@ -283,10 +286,10 @@
         </div>
     </section>
     <!--Body Soul-->
-    <div class="body-soul">
+    <div class="body-soul" data-aos-duration="1000" data-aos-delay="300">
         <h1 class="top-headline">A foodie's Happy Place </h1>
     </div>
-    <section class="dining">
+    <section class="dining" data-aos-duration="1000" data-aos-delay="300">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
@@ -443,11 +446,11 @@
         </div>
         <div class="footer-info-column center">
             <div class="footer-links">
-                <a href="#" class="footer-link">Rooms</a>
-                <a href="#" class="footer-link">Restaurant</a> 
-                <a href="#" class="footer-link">Activities</a>
-                <a href="#" class="footer-link">Events </a>
-                <a href="#" class="footer-link">Contact</a>
+                <a href="./pages/explore-rooms.html" class="footer-link">Accomodation</a>
+                <a href="#" class="footer-link">Alma Del Mar</a> 
+                <a href="./pages/our-story.html" class="footer-link">About</a>
+                <a href="#" class="footer-link"> Events </a>
+                <a href="./contact.html" class="footer-link">Contact</a>
             </div>
         </div>
         <div class="footer-info-column center">
@@ -461,6 +464,9 @@
     </footer>
     <script src="main.js"></script>
     <script src="swiper.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
