@@ -10,13 +10,16 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/app.scss">
     <link rel="icon" href="../assets/favicon-16x16.png" type="image/png" sizes="16x16">
+    <meta name="theme-color" content="#106c8e">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
 
     <div class="cover-image"></div>
-    <header>
+    <header data-aos="fade-down" data-aos-duration="1000">
         <nav>
             <div class="menu-button">
                 <span class="hamburger hamburger-5"><span></span></span>
@@ -90,7 +93,7 @@
         </div>
     </header>
     <!--Hero -->
-    <section class="hero">
+    <section class="hero" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="h1-hero">Staying at C'Roque</h1>
         <p>
             C'Roque is a wellness resort in the green hills of South Goa
@@ -118,7 +121,7 @@
                 </div>
                 <div class="form-controller">
                     <label for="datepicker-3" class="select-label">Children</label>
-                    <select id="adults" name="adults">
+                    <select id="adults2" name="adults">
                         <option value="two">0</option>
                         <option value="one">1</option>
                         <option value="three">2</option>
@@ -130,25 +133,11 @@
                 </button>
             </form>
         </div>
-        <div class="time-block">
-            <div class="local-time">
-                <p>
-                    <span><img src="../assets/images/clock.svg"></span>
-                    Local Time: <span id="local-time-india"></span>
-                </p>
-            </div>
-            <div class="weather-block">
-                <p>
-                    <span><img id='weather-icon' src="../assets/images/temperature.svg"></span>
-                    <span id="temp-desc"></span>
-                    <span id="local-temp-colva"></span>
-                </p>
-            </div>
-        </div>
+
     </section>
     <!--Welcome First fold-->
     <!-- Second Fold-->
-    <section class="welcome beige">
+    <section class="welcome beige" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="welcome-content accomodations">
             <h4 class="top-text">Welcome </h4>
             <h1 class="top-headline">Enjoy local fare, artisanal cocktails, and farm fresh produce when you dine with
@@ -807,9 +796,7 @@
 
                 </div>
                 <div class="col-md-6">
-                    <div class="info-image-container">
-                        <img src="../assets/images/accomodations/guest-info.jpg" alt="guest-info">
-                    </div>
+                    <img src="../assets/images/accomodations/guest-info.jpg" alt="guest-info" class="stay-info-image">
                 </div>
             </div>
         </div>
@@ -885,6 +872,7 @@
         </div>
     </footer>
     <!-- <script src="../main.js"></script> -->
+    <script src="../aos.js"></script>
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
@@ -900,6 +888,16 @@
                 }
             });
         }
+        let hamburger = document.querySelector('.hamburger');
+        let mobileMenu = document.querySelector('.menu-mobile');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('close');
+            mobileMenu.classList.toggle('open')
+        })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
