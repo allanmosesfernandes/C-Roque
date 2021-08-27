@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "parcel index.html --no-hmr",
-    "build": "parcel build --no-minify index.html --public-url ./",
+    "build": "parcel build --no-minify index.html ",
     "dev": "parcel index.html"
   },
   "repository": {

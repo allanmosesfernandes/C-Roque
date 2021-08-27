@@ -1,6 +1,11 @@
 $orange: #106c8e;
 $green: #2d4d3a;
 
+.property-name {
+    width: 150px;
+    height: 150px;
+}
+
 
 .blue-text {
     color: $orange !important;
@@ -49,6 +54,9 @@ header {
     z-index: -1;
 }
 
+.cover-image.contact {
+    background-image: url('../images/contact-cover.jpg');
+}
 .contact .about-writeup {
     display: flex;
     flex-direction: column;
@@ -345,15 +353,17 @@ section.welcome {
 }
 
 .woman-floating {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
     position: absolute;
     bottom: 0;
 }
 
 .resort {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
     position: absolute;
     top: 30%;
     bottom: 0;
@@ -438,7 +448,7 @@ section.welcome {
 }
 
 .dining {
-    background-image: url('../images/dining/leaf.svg');
+    background-image: url('../images/dining/palm.svg');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 250px;
@@ -532,8 +542,8 @@ section.welcome {
     }
 
     .quote {
-        background-image: url('../images/dining/leaf\ -green.svg');
-        background-size: 300px;
+        background-image: url('../images/dining/palm-white.svg');
+        background-size: 200px;
         background-repeat: no-repeat;
         background-position: bottom left;
         background-color: #2699a5;
@@ -684,6 +694,7 @@ section.welcome {
             p.subtitle {
                 width: 100%;
                 text-align: center;
+                font-size: 13px;
             }
         }
 
@@ -811,6 +822,11 @@ section.welcome {
 
     }
 
+    @media only screen and (max-width: 500px) {
+        .dining {
+            background-size: 50px;
+        }
+    }
     .room-highlight {
         display: flex;
         justify-content: center;
@@ -910,7 +926,7 @@ section.welcome {
         }
     }
 
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 450px) {
         .footer-info-column.center {
             justify-content: start;
         }
@@ -953,8 +969,8 @@ section.welcome {
         }
 
         .resort {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             position: absolute;
             top: 30%;
             bottom: 0;
@@ -962,8 +978,8 @@ section.welcome {
         }
 
         .woman-floating {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
         }
 
         .hero-subtitle {
@@ -994,7 +1010,7 @@ section.welcome {
         }
 
         .quote {
-            background-size: 150px;
+            background-size: 100px;
         }
 
         .quote-wrapper {

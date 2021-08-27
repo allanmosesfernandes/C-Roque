@@ -9,28 +9,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/app.scss">
-    <link rel="icon" href="../assets/favicon-16x16.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="theme-color" content="#106c8e">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 <div class="cover-image about-croque"></div>
     <header data-aos="fade-down" data-aos-duration="1000">
-    <nav>
+    <nav class="stroke">
         <div class="menu-button">
             <span class="hamburger hamburger-5"><span></span></span>
         </div>
-        <div class="logo">
-            <img class='property-name' src="../assets/images/FULL-LOGO.png" alt="flower-img">
-            <img class='prop-icon mobile-logo-img' src="../assets/images/logo100.png" alt="flower-img">
-        </div>
+        <a href="../index.html">
+            <div class="logo">
+                <img class='property-name' src="../assets/images/FULL-LOGO.png" alt="flower-img">
+                <img class='prop-icon mobile-logo-img' src="../assets/images/logo100.png" alt="flower-img">
+            </div>
+        </a>
+
         <div class="site-nav">
-            <a href=#> Rooms & Suites </a>
-            <a href="#">Spa</a>
-            <a href="#">Restaurant</a>
-            <a href="#">Contact</a>
+            <a href="../index.html" class="nav-links-desktop"> Home </a>
+            <a href="./our-story.html" class="nav-links-desktop"> About </a>
+            <a href="explore-rooms.html" class="nav-links-desktop"> Rooms & Suites </a>
+            <a href="" class="nav-links-desktop"> Events </a>
+
+            <a href="../contact.html">Contact</a>
         </div>
         <button class="book-now-btn">
             <a href="#">Book Now</a>
@@ -38,24 +45,23 @@
     </nav>
     <div class="menu-mobile">
         <div class="mobile-nav-links">
-            <a href='#' class="nav-link-mobile">Accomodations</a>
-            <a href='#' class="nav-link-mobile">Spa</a>
-            <a href='#' class="nav-link-mobile">Restaurant</a>
-            <a href='#' class="nav-link-mobile">Contact</a>
+            <a href="../index.html"> Home </a>
+            <a href="./our-story.html"> About </a>
+            <a href="explore-rooms.html"> Rooms & Suites </a>
+            <a href="../contact.html">Contact</a>
         </div>
         <div class="mobile-menu-links">
             <div class="menu-link-group">
                 <p class="menu-titles">ADDRESS</p>
                 <p class="menu-text">
-                    Lorem Ipsum Dolor Sit<br>
-                    Amet, 1234 45 Elit
+                    Novo Vaddo, Sernabatim Beach, <br>Colva, Goa 403708 
                 </p>
                 <a href="#" class="orange-text">How to get there</a>
             </div>
             <div class="menu-link-group">
                 <p class="menu-titles">CONTACT</p>
                 <p class="orange-text ">989899870</p>
-                <a href="#" class="orange-text">reservations@croque.com</a>
+                <a href="mailto:reservations@croquebeachresort.com" class="email-contact">reservations@croquebeachresort.com</a> 
             </div>
             <div class="menu-link-group">
                 <p class="menu-titles">FOLLOW US</p>
@@ -106,7 +112,7 @@
                 </h1>
 
                 <button class="book-now-light">
-                    <a href="#">See Menu</a>
+                    <a href="../assets/menu/ADM menu's_edited80 (1)-compressed.pdf" target="_blank">See Menu</a>
                 </button>
             </div>
         </div>
@@ -148,11 +154,11 @@
                 <p class="subtitle restaurant-hours">
                     Monday – Sunday<br>
                     Breakfast and Lunch: 8 AM to 2:30 PM<br>
-                    Dinner: 5 PM to 9 PM (Open Until 10 PM on Friday and Saturday)
-
+                    Dinner: 5 PM to 9 PM (Open Until 10 PM on Friday and Saturday)<br>
+                    Contact: <a href="tel:+919823456279">+91 9823456279</a> 
                 </p>
                 <button class="book-now-light">
-                    <a href="#">See Menu</a>
+                    <a href="../assets/menu/ADM menu's_edited80 (1)-compressed.pdf" target="_blank">See Menu</a>
                 </button>
             </div>
         </div>
@@ -178,9 +184,9 @@
             </h4>
             <p class="footer-text">
                <a href="tel:919823456231" class="mobile-number">
-                +91 98234 56231
+                +91 9823456288
                </a> <br>
-                <a href="mailto:croqueresort@gmail.com" class="email-contact">croqueresort@gmail.com</a> 
+                <a href="mailto:reservations@croquebeachresort.com" class="email-contact">reservations@croquebeachresort.com</a> 
             </p>
         </div>
         <div class="footer-group">
@@ -205,29 +211,20 @@
                             </path>
                         </svg></div>
                 </a>
-                <a href="#" class="social-icon-menu w-inline-block">
-                    <div class="w-embed"><svg fill="#2699a5" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 26 26" width="26px" height="26px">
-                            <path
-                                d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219">
-                            </path>
-                        </svg></div>
-                </a>
             </div>
         </div>
     </div>
     <div class="footer-info-column center">
         <div class="footer-links">
             <a href="./explore-rooms.html" class="footer-link">Accomodation</a>
-            <a href="#" class="footer-link">Alma Del Mar</a> 
+            <a href="javascript:void(0)" class="footer-link">Alma Del Mar</a> 
             <a href="./our-story.html" class="footer-link">About</a>
-            <a href="#" class="footer-link"> Events </a>
+            <a href="javascript:void(0)" class="footer-link"> Events </a>
             <a href="../contact.html" class="footer-link">Contact</a>
         </div>
     </div>
     <div class="footer-info-column center">
         <div class="footer-links">
-            <a href="#" class="footer-link">COVID Safety Measures</a> 
             <a href="#" class="footer-link">Privacy Policy</a>
             <a href="#" class="footer-link">Terms & Condition </a>
             <a href="#" class="footer-link">Cookies Policy</a>
