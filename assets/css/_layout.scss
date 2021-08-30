@@ -625,7 +625,9 @@ section.welcome {
     }
 
     @media only screen and (max-width: 768px) {
-
+        .gallery1 {
+            padding: 200px 0 0 0;
+        }
         .mobile-logo-img {
             display: block;
         }
