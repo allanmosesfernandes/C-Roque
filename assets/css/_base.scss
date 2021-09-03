@@ -34,6 +34,25 @@ img {
 p {
     font-size: 14px !important;
 }
+}
 
+.no-before {
+    &::before {
+        content: "";
+        background-image: none !important;
+    }
+}
+.list-style-type {
 
+    &::before {
+        content: "";
+        background: url('../../assets/images/rooms/new-moon.png');
+        width: 8px;
+        height: 8px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+    }
+    padding: 10px 20px !important;
+    font-size: 16px;
 }
