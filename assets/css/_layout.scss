@@ -332,7 +332,10 @@ section.welcome {
     padding-top: 140px;
     padding-bottom: 0px;
     flex-direction: column;
-
+    background-image: url('../../assets/images/welcome/blob\ \(1\).svg');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: right top;
     .welcome-content {
         width: 70%;
     }
@@ -627,6 +630,9 @@ section.welcome {
     }
 
     @media only screen and (max-width: 768px) {
+        section.welcome {
+            background-image: none;
+        }
         .gallery1 {
             padding: 200px 0 0 0;
         }
@@ -959,7 +965,7 @@ section.welcome {
             display: flex;
             margin: auto;
         }
-
+        
         .info-image-container img {
             height: 300px !important;
 
