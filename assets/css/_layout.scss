@@ -630,6 +630,10 @@ section.welcome {
     }
 
     @media only screen and (max-width: 768px) {
+        .float {
+            display: block;
+        }
+
         section.welcome {
             background-image: none;
         }
@@ -659,6 +663,7 @@ section.welcome {
         }
 
         .float {
+            display: none;
             position: fixed;
             width: 50px;
             height: 50px;
