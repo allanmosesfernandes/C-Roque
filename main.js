@@ -1,3 +1,4 @@
+
 /* Swiper Initialization */
 // import Swiper bundle with all modules installed
 let timeText = document.querySelector('#local-time-india');
@@ -38,8 +39,8 @@ fetch(url)
 //   msg.textContent = "Please search for a valid city 😩";
 });
 
-
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('close');
     mobileMenu.classList.toggle('open')
 })
+

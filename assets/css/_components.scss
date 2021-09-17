@@ -73,7 +73,7 @@ ul li {
 
 .menu-mobile {
     position: fixed;
-    top: -100vh;
+    top: -101vh;
     z-index: 10;
     display: block;
     overflow: auto;
@@ -183,8 +183,7 @@ ul li {
     }
 
     .book-now-btn {
-        padding: 5px;
-
+        padding: 15px 30px;
         a {
             font-size: 12px;
         }

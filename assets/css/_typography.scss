@@ -13,7 +13,7 @@
   }
 
   .h1-hero {
-      font-size: 100px;
+      font-size: 50px;
       font-family: 'Ivy-mode regular' !important;
 
   }
@@ -153,6 +153,7 @@
     .top-headline {
         width: 70%;
         margin: 20px auto;
+        text-transform: none;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -187,5 +188,9 @@
             width: 100%;
         }
     }
-
+    .accomodations {
+        .top-headline {
+            width: 100%;
+        }
+    }
 }
