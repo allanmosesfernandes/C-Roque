@@ -8,7 +8,9 @@ $green: #2d4d3a;
     height: 150px;
 }
 
-
+body {
+    display: block !important;
+}
 .blue-text {
     color: $orange !important;
 }
