@@ -1,6 +1,8 @@
 $orange: #106c8e;
 $green: #2d4d3a;
-
+body {
+    display: none;
+}
 .property-name {
     width: 150px;
     height: 150px;
@@ -453,7 +455,7 @@ section.welcome {
 }
 
 .dining {
-    background-image: url('../images/dining/palm.svg');
+    background-image: url('../images/dining/palm.jpg');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 250px;
@@ -467,7 +469,7 @@ section.welcome {
 }
 
 .dining-img {
-    background-image: url("../images/dining/Dining\ at\ ADM\ 01.jpg");
+    background-image: url("../images/dining/palm.jpg");
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -856,6 +858,7 @@ section.welcome {
         margin-bottom: 100px;
 
         .room-background {
+            display: none;
             background-image: url('../images/first-slider/slider-02.jpg');
             background-position: center;
             z-index: 0;
@@ -868,7 +871,17 @@ section.welcome {
             background-image: url('../images/rooms/slide/Tropical\ Rooms-min.jpeg');
         }
         .room-background.coral {
-            background-image: url('../images/rooms/slide/Coral\ Rooms-min.jpg');
+            background-image: url('../apple-touch-icon.png');
+        }
+
+        .room-background-floral {
+            background-image: url('../images/first-slider/slider-02.jpg');
+            background-position: center;
+            z-index: 0;
+            width: 100%;
+            height: 580px;
+            max-width: 750px;
+            background-repeat: no-repeat;
         }
         .room-background.king-reef {
             background-image: url('../images/rooms/slide/KIng\ Reef\ Suites-min.jpeg');
